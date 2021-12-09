@@ -28,7 +28,7 @@ breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=tru
 \addbibresource{CRB.bib}
 
 % Use '[disable]' as a parameter to hide todos
-\usepackage{todonotes}
+\usepackage[disable]{todonotes}
 \usepackage{framed}
 
 % Prevent page breaks within paragraphs
@@ -40,7 +40,7 @@ breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=tru
 \titlehead{USDA-APHIS Final Report}
 \title{Coconut Rhinoceros Beetle Biological Control}
 \author{Aubrey Moore, University of Guam}
-\date{Submitted December 5, 2021}
+\date{Submitted December 9, 2021}
 \maketitle
 \begin{description}	
 	\item[Report ID:] AP19PPQS\&T00C168-PE-Final-21 (RPT-63690)
@@ -57,7 +57,6 @@ breaklinks=true,pdfborder={0 0 0},pdfborderstyle={},backref=false,colorlinks=tru
 \newpage{}
 \tableofcontents{}
 
-\todo[inline]{clean crap from source}
 \listoftodos
 
 \clearpage
@@ -334,7 +333,7 @@ Rather than re-establish a trapping survey, we intend to establish a monitoring 
 We developed a highly automated roadside survey for CRB damage.
 High definition digital images are recorded along roadsides of all major routes at a rate of one per second by a smart phone attached to a vehicle \cite{mooreSetAutomatedRoadside2020}, \cite{mooreYouTubeVideoMounting2020}. Back in the lab, a computer program developed using an artificial intelligence technique called \emph{deep learning} examines every image, finds all coconut palms, measures CRB damage to each palm, and generates an interactive map which is published on the internet (Fig. 1).
 
-Our survey is based on a standardized 5-point damage rating developed by Trevor Jackson at AgResearch New Zealand which is in use on several Pacific islands \cite{mooreAutomatedRoadsideVideo2020}. Automated damage rating is performed by a pair of object detectors developed under contract by OnePanel Inc. \cite{mooreRequestInterestObject2020}, \cite{onepanelinc.ScopeWorkObject2020}, \cite{onepanelinc.AIPipelineOperations2020} which find all coconut palms within an image, score each one, and find v-shaped cuts. In addition to being used for surveillance, this automated system may also be useful for early detection device for CRB.
+Our survey is based on a standardized 5-point damage rating developed by Trevor Jackson at AgResearch New Zealand which is in use on several Pacific islands \cite{mooreAutomatedRoadsideVideo2020}. Automated damage rating is performed by a pair of object detectors developed under contract by OnePanel Inc. \cite{mooreRequestInterestObject2020}, \cite{onepanelinc.ScopeWorkObject2020}, \cite{onepanelinc.AIPipelineOperations2020} which find all coconut palms within an image, score each one, and find v-shaped cuts. In addition to being used for surveillance, this automated system may also be useful for early detection of CRB.
 
 A presentation on this new CRB survey methodology was made at the December 9 2020 meeting of the CRB-G Action Group conducted as a Zoom webinar \cite{mooreVideoRecordingCRBG2020}, \cite{mooreAutomatedRoadsideVideo2020}.
 
@@ -353,21 +352,12 @@ Five surveys have been completed on Guam:
 
 These surveys indicate that about 20\% of Guam's roadside coconut palms show visible damage from coconut rhinoceros beetle (Fig. \ref{fig:timeline}).
 
-% TODO: \usepackage{graphicx} required
 \begin{figure}[h]
 	\centering
 	\includegraphics[width=0.7\linewidth]{images/timeline}
 	\caption{Coconut rhinoceros beetle damage ratings from automated roadside surveys.}
 	\label{fig:timeline}
 \end{figure}
-
-
-\todo{Summarize results of surveys, count dead trees}
-
-\todo{add webmap figures}
-
-\todo{resend press release}
-
 
 The following four images were extracted from a draft of the University of Guam's Western Pacific Tropical Research Center impact report for 2020. They provide a nontechnical overview of the new automated roadside video survey for CRB damage and results from the first Guam survey in October, 2020.
 
@@ -402,10 +392,9 @@ The following four images were extracted from a draft of the University of Guam'
 \clearpage
 \paragraph{Rota Survey}
 
-Rota was invaded by CRB in 2017 and eradication efforts by Rota Department of Land and Natural Resources have successfully kept the population at a very low level, although the population has begun to spread to new areas of the island. In October 2020, a smart phone and associated equipment was sent to Rota-DLNR so that they could do an initial roadside video survey in support of their CRB control efforts. In addition to the equipment, a survey setup guide and  \cite{aubreymooreSetAutomatedRoadside2020} and a setup video \cite{mooreYouTubeVideoMounting2020} were prepared and sent.
+Rota was invaded by CRB in 2017 and eradication efforts by Rota Department of Land and Natural Resources have successfully kept the population at a very low level, although the population has begun to spread to new areas of the island. In October 2020, a smart phone and associated equipment was sent to Rota-DLNR so that they could do an initial roadside video survey in support of their CRB control efforts. In addition to the equipment, a survey setup guide and  \cite{mooreSetAutomatedRoadside2020} and a setup video \cite{mooreYouTubeVideoMounting2020} were prepared and sent.
 
 The survey was performed by Mark Manglona, Rota-DLNR and the phone containing videos from the survey was returned to the University of Guam.  Videos were analyzed using the workflow developed for the Guam surveys. The resulting web map contained many false positives for CRB damage, but there is one hit which shows a classic v-shaped cut probably caused by CRB. For convenience, data for this hit (images, date, location) were documented as an iNaturalist observation (Figure \ref{fig:rota-inat-obs}). If this v-shaped cut was caused by CRB, there will be a bore hole. Rota-DLNR located the damaged palm but did not find a bore hole.  Therefor the damage was not caused by CRB.
-
 
 \begin{figure}[h]
 	\centering
@@ -415,9 +404,6 @@ The survey was performed by Mark Manglona, Rota-DLNR and the phone containing vi
 \end{figure}
 
 \newpage
-
-
-
 
 \section{Impediments to Progress in the Guam CRB Biocontrol Program}
 \label{impediments}
@@ -453,7 +439,9 @@ Based on these results, the PI decided to suspend bioassays until we had conclus
 developed and executed. One hundred beetles were collected from each of two trapping sites
 (Leo Palace Resort in Southern Guam and the UOG Ag. Expt. Stn. in northern Guam).
 Gut samples were obtained from these beetles and tested using PCR in our lab and also in
-Sean Marshall's lab at AgResearch New Zealand. In PCR results from both labs all beetles tested positive for CRB-G biotype and negative for OrNV infection \cite{graselaInvestigationDeterminePresence2020}. We suspect that
+Sean Marshall's lab at AgResearch New Zealand. In PCR results from both labs all beetles tested positive for CRB-G biotype and negative for OrNV infection \cite{graselaInvestigationDeterminePresence2020}. In addition, histological examination of gut samples did not detect OrNV inffection in any CRB collected on Guam \cite{marshallCRBHaplotypePCR2021}.
+
+We suspect that
 previous OrNV positive tests were the result of lab contamination (not false positives).
 During the hiatus in OrNV bioassays, we re-examined our bioassay methodology and have
 decided to make major changes before moving forward:
